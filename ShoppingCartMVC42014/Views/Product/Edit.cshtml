@@ -1,0 +1,109 @@
+﻿@model ShoppingCartMVC42014.DAL.Product
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+
+@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Product</legend>
+
+        @Html.HiddenFor(model => model.id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.name)
+            @Html.ValidationMessageFor(model => model.name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.unit_price)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.unit_price)
+            @Html.ValidationMessageFor(model => model.unit_price)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.instock)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.instock)
+            @Html.ValidationMessageFor(model => model.instock)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.outstock)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.outstock)
+            @Html.ValidationMessageFor(model => model.outstock)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.status)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.status)
+            @Html.ValidationMessageFor(model => model.status)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.description)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.description)
+            @Html.ValidationMessageFor(model => model.description)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.meta_options)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.meta_options)
+            @Html.ValidationMessageFor(model => model.meta_options)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.city)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.city)
+            @Html.ValidationMessageFor(model => model.city)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.photo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.photo)
+            @Html.ValidationMessageFor(model => model.photo)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

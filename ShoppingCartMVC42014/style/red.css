@@ -1,0 +1,161 @@
+/* Red Color */
+
+a, a:visited{
+	color: #df4c4d;
+}
+
+a:hover{
+	color: #f25758;
+}
+
+.color{
+	color: #f25758;
+}
+
+.button a, .button a:visited{
+background:#f25758;
+}
+
+.button a:hover{
+background:#df4c4d;
+}
+
+/* Header */
+
+header .hlinks > span{
+background: #f25758;
+border: 1px solid #df4c4d;
+}
+
+/* Navigation */
+
+.navbar{
+	background:#f25758;
+	border-top: 1px solid #df4c4d;
+	border-bottom: 1px solid #df4c4d;
+}
+
+.navbar button{
+	background: #df4c4d;
+}
+
+.navbar button:hover{
+	background: #df4c4d;
+}
+
+.navbar .nav{
+  border-left: 1px solid #df4c4d;	
+}
+
+.navbar .nav > li > a{
+   border-right: 1px solid #df4c4d;
+}
+.navbar .nav > li > a:hover{
+	background: #df4c4d !important;
+}
+
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover,
+.navbar .nav .active > a:focus {
+	background: #df4c4d !important;
+}
+
+.dropdown-toggle{
+	background: #f25758 !important;	
+}
+
+.nav-collapse .nav > li > a{
+	background: #f25758 !important;	
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+	border-color: #df4c4d;
+}
+
+/* Sidebar nav */
+
+#nav > li > a { 
+ border-left: 3px solid #f25758;
+}
+
+/* Sidebar page navigation */
+
+#navi > li > a { 
+ border-left: 3px solid #f25758;
+}
+
+
+/* Title */
+
+.title i{
+	color: #f25758;
+}
+
+
+/* Recent posts carousel */
+
+.recent-posts .carousel_nav i{
+	background: #f25758;	
+}
+
+.recent-posts .rp-details{
+	background: #f25758;
+	border-top: 1px solid #df4c4d;
+	border-bottom: 1px solid #df4c4d;
+}
+
+.recent-posts .price{
+	background: #df4c4d;
+}
+
+/* Blog */
+
+.posts .tags a{
+background:#f25758;
+border:1px solid #df4c4d;
+}
+
+.posts .tags a:hover{
+background:#df4c4d;
+border:1px solid #df4c4d;
+}
+
+.paging a:hover{
+background: #f25758;
+border:1px solid #df4c4d;
+}
+
+.paging .current{
+background: #f25758;
+border:1px solid #df4c4d;
+}
+
+/* Sidebar */
+
+.sidebar .widget{
+	border-top: 1px solid #f25758;
+}
+
+
+/* Career */
+
+.nav-tabs > li > a:hover{
+	background: #f25758;
+}
+
+
+/* Back to top */
+
+.totop a, .totop a:visited{
+	background: #f25758;
+}
+
+.totop a:hover{
+	background: #df4c4d;
+}
+
+/* Footer */
+
+footer{
+	border-top: 4px solid #f25758;
+}

@@ -1,0 +1,78 @@
+﻿@model ShoppingCartMVC42014.DAL.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Product</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.unit_price)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.unit_price)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.instock)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.instock)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.outstock)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.outstock)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.status)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.status)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.meta_options)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.meta_options)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.city)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.city)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.photo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.photo)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

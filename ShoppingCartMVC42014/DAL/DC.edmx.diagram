@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0313afb23b77420592a1a66c64d74de2" Name="Diagram1">
+        <EntityTypeShape EntityType="shoppingcartModel.Category" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingcartModel.Invoice" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingcartModel.Order" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingcartModel.Order_Details" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingcartModel.Payment" Width="1.5" PointX="8" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingcartModel.Product" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingcartModel.ProductCategory" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppingcartModel.ShoppingCart" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="shoppingcartModel.FK_Category_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppingcartModel.FK_ProductCategory_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppingcartModel.FK_Payment_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppingcartModel.FK_Order_Details_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppingcartModel.FK_Order_Details_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppingcartModel.FK_ProductCategory_Product" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
